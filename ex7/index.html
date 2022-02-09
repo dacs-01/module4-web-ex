@@ -1,0 +1,20 @@
+
+<!-- this creates the input box to enter your name -->
+<input id="name-input" type="text" placeholder="Enter your name" />
+
+<!-- this creates the button that enters your name to be used by the script -->
+<button id="my-button">Click Me</button>
+
+<!-- this script makes use of the name input and the button.
+once the input is entered and button is clicked, the site
+will show a pop up greeting you with your name. -->
+<script>
+  var myButton = document.querySelector('#my-button');
+  var nameInput = document.querySelector('#name-input');
+
+  myButton.addEventListener('click', function () {
+    if (nameInput.value !== '') {
+      alert('Hello ' + nameInput.value);
+    }
+  });
+</script>
